@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/title_red_bg" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="18dp"
+            android:text="智慧北京"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <ImageButton
+            android:id="@+id/ib_menubtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="25dp"
+            android:background="@null"
+            android:src="@drawable/img_menu" />
+        
+        <ImageButton
+            android:id="@+id/ib_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="25dp"
+            android:background="@null"
+            android:src="@drawable/icon_pic_grid_type" />
+    </RelativeLayout>
+
+    <FrameLayout
+         android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>
